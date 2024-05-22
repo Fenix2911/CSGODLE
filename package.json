@@ -1,0 +1,16 @@
+{
+  "name": "csgodle",
+  "version": "1.0.0",
+  "description": "**CSGODle** is a project inspired by the popular LOLdle application, aimed at bringing a similar experience to Counter-Strike: Global Offensive (CS:GO) players.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tailwindcss -i ./src/input.css -o ./page/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.11.1",
+    "tailwindcss": "^3.4.3"
+  }
+}
