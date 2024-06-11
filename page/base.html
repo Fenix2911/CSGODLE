@@ -1,0 +1,60 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+    <title>CS:GODle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+</head>
+<body class="text-white">
+
+<header class="p-4 content-center text-center justify-center glass">
+
+    <div class="text-7xl">
+        <a href="{% url 'home'%}"><h1>CS:GODLE</h1></a>
+    </div>
+</header>
+{%block main%}
+<main class="container mx-auto my-8">
+    <div class="flex  justify-between">
+        <div class="w-1/3 p-4 flex items-center justify-center">
+            <img src="/static/images/Condom.png" alt="Terrorist_Skin">
+        </div>
+        <div class="w-1/3 p-4 flex flex-col items-center justify-center space-y-4">
+            <div class="bg-neutral p-4 w-full text-center">
+                <a href="{% url 'gun' %}">Tryb pierwszy</a>
+            </div>
+            <div class="bg-neutral p-4 w-full text-center">
+                <a href="{% url 'skin' %}">Tryb drugi</a>
+            </div>
+            <div class="bg-neutral p-4 w-full text-center">
+                <a href="{% url 'gun' %}">Tryb trzeci</a>
+            </div>
+            <div class="bg-neutral p-4 w-full text-center">
+                <a href="{% url 'gun' %}">Tryb czwarty</a>
+            </div>
+            <div class="bg-neutral p-4 w-full text-center">
+                <p>Tryb piąty</p>
+            </div>
+        </div>
+        <div class="w-1/3  p-4 flex items-center justify-center">
+            <img src="/static/images/CT.png" alt="Counter-Terrorist_Skin">
+        </div>
+    </div>
+</main>
+{%endblock%}
+<footer class=" text-center p-4 glass">
+
+    <div class="flex-col pt-3">
+        blok reklamowy
+    </div>
+
+    <div class="flex-col pt-3">
+        <h2>www.csgodle.com</h2>
+    </div>
+</footer>
+
+</body>
+</html>
